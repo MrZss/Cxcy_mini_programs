@@ -1,0 +1,84 @@
+/* pages/attIndex/attSuc.wxss */
+
+.all {
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.font {
+  size: 20px;
+  margin-top: 5%;
+  line-height: 100px;
+}
+
+.image {
+  padding-top: 10%;
+}
+
+.pictur {
+  width: 300rpx;
+  height: 300rpx;
+  padding-top: 120rpx;
+}
+
+.warningfont {
+  color: #d81e06;
+  size: 14px;
+  font-weight: bolder;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+}
+
+.back3 {
+  margin-top: 20%;
+  background-color: #54bdeb;
+  color: #fff;
+  width: 130px;
+  height: 30px;
+  line-height: 62rpx;
+  font-size: 15px;
+}
+
+.fontblue {
+  color: #1296db;
+}
+
+.fontred {
+  color: #d81e06;
+}
+
+.hover {
+  background-color: #3197cb;
+}
+
+.max {
+  display: flex;
+}
+
+.warning {
+  width: 300rpx;
+  height: 300rpx;
+  margin: 0rpx;
+  padding: 30rpx;
+}
+
+.text {
+  color: #d81e06;
+  margin: 0rpx;
+  padding: 24rpx;
+  font-size: 50urpx;
+  font-weight: bolder;
+}
+
+.btnback {
+  background-color: #54bdeb;
+  color: #fff;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  margin: 50rpx;
+}

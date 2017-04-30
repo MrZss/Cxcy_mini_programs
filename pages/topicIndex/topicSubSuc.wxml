@@ -1,0 +1,6 @@
+<!--pages/topicIndex/topicSubSuc.wxml-->
+<view class="container">
+<image class="image" src="/images/State/success.png" mode="widthFix"> </image>
+<text class="text" >课堂答题提交成功</text>
+<button class="button" bindtap="backbtn"  hover-class="hover"> 返回 </button>
+</view>

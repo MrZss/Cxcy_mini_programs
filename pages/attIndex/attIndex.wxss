@@ -1,0 +1,36 @@
+/* pages/attIndex/attIndex.wxss */
+
+.container {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: block;
+  width: 420rpx;
+  height: 130rpx;
+  font-size: 37rpx;
+  background-color: #54bdeb;
+  border: none;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-top: 150rpx;
+  padding-top: 3%;
+}
+
+.smallbutton {
+  background-color: #54bdeb;
+  color: #fff;
+  width: 260rpx;
+  height: 60rpx;
+  line-height: 62rpx;
+  font-size: 34rpx;
+  margin-top: 20%;
+}
+
+.hover {
+  background-color: #3197cb;
+}

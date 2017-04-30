@@ -1,0 +1,27 @@
+<!--pages/attIndex/attSuc.wxml-->
+<view class="all">
+<view class='image'>
+<view wx:if="{{state=='正常'}}" ><image class="pictur" src="/images/State/success.png" ></image></view>
+<view wx:elif="{{state=='旷课'}}" ><image  class="pictur" src="/images/State/fail.png" ></image></view>
+<view wx:elif="{{state=='迟到'}}" ><image class="pictur" src="/images/State/late.png" ></image></view>
+<view wx:elif="{{state=='请假'}}"><image class="pictur" src="/images/State/vacate.png" ></image></view>
+<view wx:else  ><image class="pictur" src="/images/State/warning.png"></image></view>
+</view>
+
+<view class='font'>
+<view wx:if="{{state=='正常'}}" class='fontblue'><text>签到状态：{{state}}</text></view>
+<view wx:elif="{{state=='旷课'}}" class='fontred'><text>签到状态：{{state}}</text></view>
+<view wx:elif="{{state=='迟到'}}"class='fontred'><text>签到状态：{{state}}</text></view>
+<view wx:elif="{{state=='请假'}}"class='fontred'><text>签到状态：{{state}}</text></view>
+<view wx:else class='fontred'><text>数据未上传请耐心等待</text></view>
+</view>
+
+<view wx:if="{{state=='正常'}}" ><text class='warningfont'>签到后不进行课堂答题本次签到作废</text></view>
+<view wx:elif="{{state=='迟到'}}"class='fontred'><text>签到后不进行课堂答题本次签到作废</text></view>
+<view wx:elif="{{state=='旷课'}}" class='fontred'><text>如有任何疑问请咨询助教</text></view>
+<view wx:elif="{{state=='请假'}}"class='fontred'><text>请假请按照助教要求补交笔记</text></view>
+<view wx:else class='fontred'><text>暂时无法查询签到状态</text></view>
+
+<button bindtap="back3" class="back3" hover-class="hover">返回</button>
+
+</view>

@@ -1,0 +1,14 @@
+
+<!--pages/courseIndex/courseIndex.wxml-->
+<view>
+  <view class="title">
+    <view class="text">
+      <text>{{Lesson_NO}}</text>
+    </view>
+  </view>
+  <view class="btnBox">
+    <button class="bigBtn" bindtap="bindViewTapAtt" hover-class="hover">签到</button>
+    <button class="bigBtn" bindtap="bindViewTapTopic" hover-class="hover">课堂答题</button>
+    <button class="bigBtn" bindtap="bindViewTapLesson" hover-class="hover">本次得分</button>
+  </view>
+</view>

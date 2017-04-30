@@ -1,0 +1,11 @@
+<!--pages/attIndex/attOnline.wxml-->
+<view class="all">
+  <view class="up">
+    <text>请在webex的聊天窗口中找到聊天</text>
+  </view>
+  <view class="down">
+    <text>私聊
+      <text class="GDatt">“耿丹学院签到”</text>发送学号</text>
+  </view>
+  <button bindtap="back1" class="back1" hover-class="hover">返回</button>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/topicIndex/topicIndex.wxml-->
+<view class="container">
+<text class="clock">答题结束时间</text>
+<text class="clock"> {{clock}} </text>
+<view class="text"> {{Topic_NO}}</view>
+<view class="text1" style=" word-break: break-all"> {{problem}}</view>
+<radio-group class="radio-group" bindchange="radioChange">
+    <view  class="Text01" style=" word-break: break-all"><radio value="A"  checked="{{item.checked}}"/><text>{{first}}</text></view>
+    <view class="Text01" style=" word-break: break-all"><radio value="B" checked="{{item.checked}}"/><text>{{second}}</text></view>
+    <view class="Text01" style=" word-break: break-all"><radio value="C" checked="{{item.checked}}"/><text>{{third}}</text></view>
+    <view class="Text01" style=" word-break: break-all"><radio value="D"checked="{{item.checked}}"/><text>{{fourth}}</text></view>
+</radio-group>
+<button class="button" bindtap="btnup"  hover-class="hover"> 提交 </button>
+</view>

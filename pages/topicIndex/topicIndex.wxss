@@ -1,0 +1,102 @@
+/* pages/topicIndex/topicIndex.wxss */
+.button{
+    background-color: #54bdeb;
+    color: #fff;
+    width: 150px;
+    height:30px;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: "幼圆";
+    margin-top:80rpx;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90rpx 0;
+  box-sizing: border-box;
+} 
+
+.text{
+  margin-top:70rpx;
+  font-size:55rpx;
+  text-align:center;
+}
+
+.text1{
+  width: 90%;
+  margin-top:55rpx;
+  font-size:larger;
+  text-align:center;
+}
+
+.clock{
+   font-size:50rpx;
+   color:#1296db;
+   font-weight:bold;
+}
+
+.pitchbutton{
+     
+    color:  #10a0ea;
+    width: 250px;
+    height:40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-family: "幼圆";
+    margin-top:30rpx;
+
+}
+.radio-group{
+    display: flex;
+    width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:flex-start;
+  
+ 
+  box-sizing: border-box;
+  margin-top: 30rpx;
+}
+.group{
+  display: flex;
+  flex-direction: row;
+    margin-top: 0rpx;
+    align-items: flex-start;
+     justify-content:  flex-start;
+    
+
+}
+.btnup{
+    background-color: #54bdeb;
+    color: #fff;
+    width: 150px;
+    height:30px;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 110rpx;
+   
+}
+.viewanswer{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content:  flex-start;
+  
+}
+.Text01{
+
+  padding-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+   
+    align-items: flex-start;
+     justify-content:  flex-start;
+}
+
+.hover {
+  background-color: #3197cb;
+}

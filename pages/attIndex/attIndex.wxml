@@ -1,0 +1,7 @@
+<!--pages/attIndex/attIndex.wxml-->
+<view class="container">
+  <button bindtap="online" class='button' hover-class="hover">线上签到</button>
+  <button bindtap="reality" class='button' hover-class="hover">线下签到</button>
+  <button bindtap="check" class='button' hover-class="hover">查询签到结果</button>
+  <button bindtap="back" class='smallbutton' hover-class="hover">返回</button>
+</view>

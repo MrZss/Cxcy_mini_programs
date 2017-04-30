@@ -1,0 +1,40 @@
+/* pages/attIndex/attOnline.wxss */
+.all {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1296db;
+}
+
+.up {
+  padding-top: 40%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 44rpx;
+}
+
+.down {
+  padding-top: 30%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40rpx;
+}
+
+.back1 {
+  background-color: #54bdeb;
+  color: #fff;
+  margin-top: 35%;
+  width: 260rpx;
+  height: 60rpx;
+  line-height: 62rpx;
+  font-size: 15px;
+}
+
+.hover {
+  background-color: #3197cb;
+}
+
+.GDatt{
+  color: #F40000;
+}

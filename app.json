@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/join/join",
+    "pages/courseIndex/courseIndex",
+    "pages/my/my",
+    "pages/attIndex/attIndex",
+    "pages/attIndex/attOnline",
+    "pages/attIndex/attOffline",
+    "pages/attIndex/attSuc",
+    "pages/topicIndex/topicIndex",
+    "pages/topicIndex/topicSubSuc",
+    "pages/lessonIndex/lessonIndex"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0e90d2",
+    "navigationBarTitleText": "创新创业基础",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#f0f0f2"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#10a0ea",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/TabBarIcons/lessons.png",
+        "iconPath": "images/TabBarIcons/lesson.png",
+        "pagePath": "pages/courseIndex/courseIndex",
+        "text": "课程"
+      },
+      {
+        "selectedIconPath": "images/TabBarIcons/mys.png",
+        "iconPath": "images/TabBarIcons/my.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}

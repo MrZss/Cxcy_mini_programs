@@ -1,0 +1,43 @@
+<!--pages/lessonIndex/lessonIndex.wxml-->
+<scroll-view class="all" style="height={{screenheight}}px">
+<view class="container" >
+<text class="textTop">本次得分</text>
+
+<view  wx:if="{{signin == '正常'}}" class="userinfo-avatar"  background-size="cover"> <text  class="textcenter">{{Attendance_Score+Answer_Score}}</text> </view>
+<view wx:elif="{{ signin == '请假'}}" class="userinfo-avatar"  background-size="cover"> <text text  class="textcenter">{{Attendance_Score+Answer_Score}}</text> </view>
+<view wx:elif="{{ signin == '旷课'}}"   class="userinfo-avatar"  background-size="cover"> <text class="textcenter">0</text> </view>
+<view wx:elif="{{ signin == '迟到'}}"   class="userinfo-avatar"  background-size="cover"> <text class="textcenter">{{Attendance_Score+Answer_Score}}</text> </view>
+<view wx:else class="userinfo-avatar"> <text>0</text> </view>
+
+<view class="viewtext">
+<view class="userinfo-11"  background-size="cover"><text  >签到得分</text></view>
+<view class="userinfo-22"  background-size="cover"><text  >答题得分</text></view>
+</view>
+<view class="viewcenter">
+<view class="userinfo-1"  background-size="cover"><text class="textcenter" >{{Attendance_Score}}</text></view>
+<view class="userinfo-2"  background-size="cover"><text class="textcenter" >{{Answer_Score}}</text></view>
+
+</view>
+
+<view class="signintype">
+<view wx:if="{{signin == '正常'}}"> <text></text> </view>
+<view wx:elif="{{signin == '迟到'}}"> <text>迟到扣掉部分签到得分</text> </view>
+<view wx:elif="{{ signin == '请假'}}"> <text>请假请按程序补充笔记后才能查询分数</text> </view>
+<view wx:elif="{{ signin == '旷课'}}"> <text>旷课本次无成绩</text> </view>
+<view wx:else> <text>助教还未录入请稍等</text> </view>
+</view>
+<view class="viewanswer">
+<text >题目答案</text>
+
+</view>
+<view class="container1" bindtap="rightanswer">
+<view class="answer"><text >点击查看正确答案</text></view>
+<view class="viewcenter2"><text>{{firstscore1}}</text></view>
+<view class="viewcenter2"><text>{{secondscore1}}</text></view>
+<view class="viewcenter2"><text>{{thirdscore1}}</text></view>
+<view class="viewcenter2"><text>{{fouthscore1}}</text></view>
+</view>
+ <button class="btnback" bindtap="bindViewCourselndex"  hover-class="hover"> 返回 </button>
+
+</view>
+</scroll-view>

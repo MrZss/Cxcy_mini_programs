@@ -1,0 +1,30 @@
+<!--pages/my/my.wxml-->
+<view class="info-box">
+    <view class="headimg">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+    <view class="info">
+        <view class="text-box"><text class="label">姓名：</text><text class="content">{{stu_name}}</text></view>
+        <view class="text-box"><text class="label">班级：</text><text class="content">{{stu_class}}</text></view>
+        <view class="text-box bottom"><text class="label">学号：</text><text class="content">{{stu_id}}</text></view>
+    </view>
+     </view>
+
+<view class="main">
+<view>
+    <view class="title" wx:if="{{you?true:false}}">
+        <text>总成绩</text>
+    </view>
+    <view class="score"  wx:if="{{you?true:false}}">
+        <view class="radius">{{fenshu}}</view>
+    </view>
+</view>
+    <view class="title">
+        <text>每节课总得分</text>
+    </view>
+<scroll-view  scroll-x="true" style=" white-space: nowrap; display: flex">
+  <view wx:for="{{score}}" class='min-part' >第{{index+1}}节课
+    <view class='smallpart'>{{item}}</view>
+  </view>
+</scroll-view>
+</view>
